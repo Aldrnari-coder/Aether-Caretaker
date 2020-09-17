@@ -1,6 +1,13 @@
 @keyframes titleAnim {
   0% {
-    postion: relative;
-    top: 110%;
+    position: absolute;
+    color: #000000;
+    background-color: transparent;
+    top: 101vh;
+  }
+  80%{
+    top: 1ch;
+    color: #000000;
+    background-color: transparent;
   }
 }
