@@ -1,0 +1,6 @@
+@keyframes titleAnim {
+  0% {
+    postion: relative;
+    top: 110%;
+  }
+}
