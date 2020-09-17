@@ -1,2 +1,2 @@
 # Aether-Caretaker
-Text-based fantasy farming sim 
+Text-based fantasy adventure farming sim 
