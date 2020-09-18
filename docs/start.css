@@ -15,13 +15,13 @@
   40%{
     top: 0px;
   }
-  80%{
+  90%{
     color: #DEB887;
     text-shadow: none;
   }
   100%{
     color: #00FFFF;
-    text-shadow: 0em 0em 0.5em #7FFFD4;
+    text-shadow: 0em 0em 1em #7FFFD4;
   }
 }
 
@@ -77,5 +77,10 @@ body {
 }
 
 .start-nav div:hover{
-  
+  color: #00ffff;
+}
+
+.start-nav div:active{
+  transform: translateY(0.25vh);
+  box-shadow: 0px 0.25vh #8B4513;
 }
