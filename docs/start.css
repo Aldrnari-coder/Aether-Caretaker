@@ -6,7 +6,7 @@
     transform: scale(1);
   }
   20%{
-    color: #000000;
+    color: #8B4513;
     background-color: transparent;
     transform: scale(2);
   }
@@ -16,7 +16,7 @@
   }
   40%{
     top: 0px;
-    bottom: auto;
+    text-shadow: none;
     text-shadow: 0px var( --title-shadow-offset) var(--title-shadow-scale) black;
   }
   83%{
@@ -25,7 +25,7 @@
     text-shadow: var( --title-shadow-offset) 0px var(--title-shadow-scale) black;
   }
   86%{
-    color: #0000ff;
+    color: #000000;
     background-color: transparent;
     text-shadow: calc(var( --title-shadow-offset)*0.866025403784) calc(var( --title-shadow-offset)*0.5) var(--title-shadow-scale) black;
   }
@@ -50,9 +50,9 @@
     text-shadow: calc(var( --title-shadow-offset)*-0.866025403784) calc(var( --title-shadow-offset)*0.5) var(--title-shadow-scale) black;
   }
   100%{
-    color: #000000;
+    color: #ffffff;
     background-color: transparent;
-    text-shadow: 0em 0em var(--title-shadow-scale) black;
+    text-shadow: 0em 0em var(--title-shadow-scale) gold;
   }
 }
 body {
@@ -89,9 +89,11 @@ body {
 }
 
 .start-nav div{
+  color: #8B4513;
   display: flex;
-  border-style: groove;
-  border-radius: 0.5em;
+  border-style: solid;
+  border-radius: 0.2em;
   borber-color: #DEB887;
-  width: 8vmin;
+  width: 30vmin;
+  margin: 5vh;
 }
