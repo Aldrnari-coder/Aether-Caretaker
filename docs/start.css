@@ -12,11 +12,12 @@
   }
   35%{
     transform: scale(1);
+    text-shadow: none;
   }
   40%{
     top: 0px;
     bottom: auto;
-    text-shadow: 0px 0px var(--title-shadow-scale) black;
+    text-shadow: 0px var( --title-shadow-offset) var(--title-shadow-scale) black;
   }
   83%{
     color: #000000;
@@ -88,6 +89,9 @@ body {
 }
 
 .start-nav div{
+  display: flex;
+  border-style: groove;
   border-radius: 0.5em;
   borber-color: #DEB887;
+  width: 8vmin;
 }
