@@ -8,7 +8,7 @@
   40%{
     color: #000000;
     background-color: transparent;
-    transform: scale(3);
+    transform: scale(2);
   }
   75%{
     transform: scale(1);
@@ -58,8 +58,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  --title-shadow-offset: 1em;
-  --title-shadow-scale: 1em;
+  --title-shadow-offset: 0.1em;
+  --title-shadow-scale: 0.1em;
 }
 
 .title-container {
@@ -72,8 +72,20 @@ body {
 .title-container div {
   position: relative;
   animation-name: title-anim;
-  animation-delay: calc(var(--anim-delay)*100ms);
+  animation-delay: calc(var(--anim-delay)*200ms);
   animation-duration: 4s;
   animation-fill-mode: both;
 }
 
+.start-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.start-nav div{
+  border-radius: 0.5em;
+  borber-color: BurlyWood;
+}
