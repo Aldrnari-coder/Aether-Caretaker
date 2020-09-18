@@ -58,6 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #F5DEB3;
   --title-shadow-offset: 0.1em;
   --title-shadow-scale: 0.1em;
 }
@@ -78,6 +79,7 @@ body {
 }
 
 .start-nav {
+  font-size: 8vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,5 +89,5 @@ body {
 
 .start-nav div{
   border-radius: 0.5em;
-  borber-color: BurlyWood;
+  borber-color: #DEB887;
 }
