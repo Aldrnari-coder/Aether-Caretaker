@@ -19,13 +19,21 @@
     background-color: transparent;
   }
 }
-
-.title-container {
-  
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.title-container span {
+.title-container {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.title-container div {
   animation-name: title-anim;
   animation-delay: calc(var(--anim-delay)*100ms);
+  animation-duration: 4s;
+  animation
 }
 
