@@ -1,6 +1,6 @@
 @keyframes title-anim {
   0% {
-    color: transparent;
+    color: #F5DEB3;
     background-color: none;
     top: calc(100vh - 2em);
     transform: scale(1);
@@ -74,6 +74,7 @@ body {
 }
 
 .title-container div {
+  transition: color 1s, text-shadow 1s;
   text-align: center;
   position: relative;
   animation-name: title-anim;
@@ -100,6 +101,7 @@ body {
 }
 
 .start-nav div{
+  transition: transform 500ms, color 500ms;
   color: #DEB887;
   text-shadow: 0px 1px black;
   text-align: center;
