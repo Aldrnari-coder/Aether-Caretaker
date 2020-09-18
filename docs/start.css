@@ -29,9 +29,9 @@
 
 @keyframes button-fadein {
   0%{
-    color: none;
-    background-color: none;
-    border-color: none;
+    color: #F5DEB3;
+    background-color: transparent;
+    border-color: transparent;
     box-shadow: none;
     text-shadow: none;
     top: 0.5em;
@@ -79,8 +79,10 @@ body {
   animation-name: title-anim;
   animation-delay: calc(var(--anim-delay)*200ms);
   animation-duration: 4s;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
   cursor: default;
+  color: #00FFFF;
+  text-shadow: 0em 0em 2px #7FFFD4;
 }
 
 .title-container div:hover {
