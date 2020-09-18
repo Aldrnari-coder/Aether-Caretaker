@@ -34,6 +34,7 @@
     border-color: transparent;
     box-shadow: transparent;
     text-shadow: transparent;
+    transform: translateY(0.5em);
   }
   20%{
     color: #DEB887;
@@ -50,7 +51,6 @@
   80%{
     border-color: #8B4513;
     box-shadow: transparent;
-    transform: translateY(0.5em);
   }
   100%{
     box-shadow: 0px 0.5vh #8B4513;
