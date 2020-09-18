@@ -6,7 +6,6 @@
     transform: scale(1);
   }
   20%{
-    color: #8B4513;
     transform: scale(1.5);
   }
   35%{
@@ -16,17 +15,47 @@
     top: 0px;
   }
   90%{
+    color: #8B4513;
+  }
+  95%{
     color: #DEB887;
     text-shadow: none;
   }
   100%{
     color: #00FFFF;
-    text-shadow: 0em 0em 1em #7FFFD4;
+    text-shadow: 0em 0em 2em #7FFFD4;
   }
 }
 
 @keyframes button-fadein {
-  
+  0%{
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: transparent;
+    text-shadow: transparent;
+  }
+  20%{
+    color: #DEB887;
+    text-shadow: transparent;
+  }
+  40%{
+    text-shadow: 0px 1px black;
+    background-color: transparent;
+  }
+  60%{
+    background-color: #FAEBD7;
+    border-color: transparent;
+  }
+  80%{
+    border-color: #8B4513;
+    box-shadow: transparent;
+    transform: translateY(0.5em);
+  }
+  100%{
+    box-shadow: 0px 0.5vh #8B4513;
+    transform: translateY(-0.5em);
+  }
 }
 
 body {
@@ -65,15 +94,14 @@ body {
 .start-nav div{
   text-align: center;
   cursor:pointer;
-  color: #DEB887;
   display: flex;
   border-style: solid;
   border-radius: 0.2em;
-  borber-color: #8B4513;
-  background-color: #FAEBD7;
   width: 50vmin;
   margin: 1vh;
-  box-shadow: 0px 0.5vh #8B4513;
+  animation-name: button-fadein;
+  animation-duration: 1s;
+  animation-delay: calc(var(--anim-delay)*100ms);
 }
 
 .start-nav div:hover{
