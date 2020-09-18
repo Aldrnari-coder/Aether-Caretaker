@@ -23,17 +23,17 @@
   }
   100%{
     color: #00FFFF;
-    text-shadow: 0em 0em 2em #7FFFD4;
+    text-shadow: 0em 0em 2px #7FFFD4;
   }
 }
 
 @keyframes button-fadein {
   0%{
-    color: transparent;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: transparent;
-    text-shadow: transparent;
+    color: none;
+    background-color: none;
+    border-color: none;
+    box-shadow: none;
+    text-shadow: none;
     top: 0.5em;
   }
   20%{
@@ -83,6 +83,11 @@ body {
   cursor: default;
 }
 
+.title-container div:hover {
+  color: #ffffff;
+  text-shadow: 0px 0px 2em #00ffff;
+}
+
 .start-nav {
   font-size: 8vmin;
   display: flex;
@@ -107,7 +112,7 @@ body {
   margin: 1vh;
   animation-name: button-fadein;
   animation-duration: 1s;
-  animation-delay: calc(var(--anim-delay)*100ms);
+  animation-delay: calc(var(--anim-delay)*200ms);
   animation-fill-mode: backwards;
 }
 
