@@ -1,6 +1,5 @@
 @keyframes title-anim {
   0% {
-    position: absolute;
     color: #000000;
     background-color: transparent;
     top: 101vh;
@@ -9,31 +8,33 @@
   40%{
     transform: scale(3);
   }
+  75%{
+    transform: scale(1);
+  }
   80%{
     top: 1ch;
-    transform: scale(1);
   }
   85%{
     color: #000000;
     background-color: transparent;
   }
-  87%{
+  88%{
     color: #0000ff;
     background-color: transparent;
   }
-  89%{
+  91%{
     color: #ffffff;
     background-color: transparent;
   }
-  91%{
+  94%{
     color: #00ff00;
     background-color: transparent;
   }
-  93%{
+  97%{
     color: #ffff00;
     background-color: transparent;
   }
-  95%{
+  99%{
     color: #ff0000;
     background-color: transparent;
   }
@@ -55,6 +56,7 @@ body {
 }
 
 .title-container div {
+  position: relative;
   animation-name: title-anim;
   animation-delay: calc(var(--anim-delay)*100ms);
   animation-duration: 4s;
