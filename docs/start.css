@@ -1,58 +1,30 @@
 @keyframes title-anim {
   0% {
     color: transparent;
-    background-color: transparent;
+    background-color: none;
     top: calc(100vh - 2em);
     transform: scale(1);
+    letter-spacing: 0px;
   }
   20%{
     color: #8B4513;
-    background-color: transparent;
     transform: scale(2);
+    letter-spacing: 0.5em;
   }
   35%{
     transform: scale(1);
-    text-shadow: none;
+    letter-spacing: 0px;
   }
   40%{
     top: 0px;
+  }
+  80%{
+    color: #8B4513;
     text-shadow: none;
-    text-shadow: 0px var( --title-shadow-offset) var(--title-shadow-scale) black;
-  }
-  83%{
-    color: #000000;
-    background-color: transparent;
-    text-shadow: var( --title-shadow-offset) 0px var(--title-shadow-scale) black;
-  }
-  86%{
-    color: #000000;
-    background-color: transparent;
-    text-shadow: calc(var( --title-shadow-offset)*0.866025403784) calc(var( --title-shadow-offset)*0.5) var(--title-shadow-scale) black;
-  }
-  89%{
-    color: #ffffff;
-    background-color: transparent;
-    text-shadow: calc(var( --title-shadow-offset)*0.5) calc(var( --title-shadow-offset)*0.866025403784) var(--title-shadow-scale) black;
-  }
-  92%{
-    color: #00ff00;
-    background-color: transparent;
-    text-shadow: 0px calc(var( --title-shadow-offset)*1) var( --title-shadow-offset) black;
-  }
-  95%{
-    color: #ffff00;
-    background-color: transparent;
-    text-shadow: calc(var( --title-shadow-offset)*-0.5) calc(var(--title-shadow-offset)*0.866025403784) var(--title-shadow-scale) black;
-  }
-  98%{
-    color: #ff0000;
-    background-color: transparent;
-    text-shadow: calc(var( --title-shadow-offset)*-0.866025403784) calc(var( --title-shadow-offset)*0.5) var(--title-shadow-scale) black;
   }
   100%{
-    color: #ffffff;
-    background-color: transparent;
-    text-shadow: 0em 0em var(--title-shadow-scale) gold;
+    color: #87CEFA;
+    text-shadow: 0em 0em var(--title-shadow-scale) #7FFFD4;
   }
 }
 body {
@@ -95,5 +67,5 @@ body {
   border-radius: 0.2em;
   borber-color: #DEB887;
   width: 30vmin;
-  margin: 5vh;
+  margin: 1vh;
 }
