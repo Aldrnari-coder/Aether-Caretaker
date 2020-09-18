@@ -12,41 +12,52 @@
     transform: scale(1);
   }
   80%{
-    top: 1ch;
+    top: 0px;
+    text-shadow: 0ch 0ex var(--title-shadow-scale) black;
   }
-  85%{
+  83%{
     color: #000000;
     background-color: transparent;
+    text-shadow: var(--title-shadow-scale-x) 0ex var(--title-shadow-scale) black;
   }
-  88%{
+  86%{
     color: #0000ff;
     background-color: transparent;
+    text-shadow: calc(var(--title-shadow-scale-x)*0.866025403784) calc(var(--title-shadow-scale-y)*-0.5) var(--title-shadow-scale) black;
   }
-  91%{
+  89%{
     color: #ffffff;
     background-color: transparent;
+    text-shadow: calc(var(--title-shadow-scale-x)*0.5) calc(var(--title-shadow-scale-y)*-0.866025403784) var(--title-shadow-scale) black;
   }
-  94%{
+  92%{
     color: #00ff00;
     background-color: transparent;
+    text-shadow: 0px calc(var(--title-shadow-scale-y)*-1) var(--title-shadow-scale) black;
   }
-  97%{
+  95%{
     color: #ffff00;
     background-color: transparent;
+    text-shadow: calc(var(--title-shadow-scale-x)*-0.5) calc(var(--title-shadow-scale-y)*-0.866025403784) var(--title-shadow-scale) black;
   }
-  99%{
+  98%{
     color: #ff0000;
     background-color: transparent;
+    text-shadow: calc(var(--title-shadow-scale-x)*-0.866025403784) calc(var(--title-shadow-scale-y)*-0.5) var(--title-shadow-scale) black;
   }
   100%{
     color: #000000;
     background-color: transparent;
+    text-shadow: 0ch 0ex var(--title-shadow-scale) black;
   }
 }
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  --title-shadow-scale-x: 4ch;
+  --title-shadow-scale-y: 4ex;
+  --title-shadow-scale: 25em;
 }
 
 .title-container {
@@ -58,9 +69,8 @@ body {
 .title-container div {
   position: relative;
   animation-name: title-anim;
-  animation-delay: calc(var(--anim-delay)*100ms);
+  animation-delay: calc(var(--anim-delay)*200ms);
   animation-duration: 4s;
   animation-fill-mode: both;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
