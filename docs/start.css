@@ -34,7 +34,7 @@
     border-color: transparent;
     box-shadow: transparent;
     text-shadow: transparent;
-    transform: translateY(0.5em);
+    top: 0.5em;
   }
   20%{
     color: #DEB887;
@@ -51,10 +51,11 @@
   80%{
     border-color: #8B4513;
     box-shadow: transparent;
+    top: 0.5em;
   }
   100%{
     box-shadow: 0px 0.5vh #8B4513;
-    transform: translateY(-0.5em);
+    top: 0%;
   }
 }
 
@@ -92,11 +93,16 @@ body {
 }
 
 .start-nav div{
+  color: #DEB887;
+  text-shadow: 0px 1px black;
   text-align: center;
   cursor:pointer;
   display: flex;
   border-style: solid;
   border-radius: 0.2em;
+  border-color: #8B4513;
+  background-color: #FAEBD7;
+  box-shadow: 0px 0.5vh #8B4513;
   width: 50vmin;
   margin: 1vh;
   animation-name: button-fadein;
