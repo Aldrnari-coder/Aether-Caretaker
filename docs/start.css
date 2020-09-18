@@ -101,7 +101,7 @@ body {
 }
 
 .start-nav div{
-  transition: transform 500ms, color 500ms;
+  transition: color 500ms;
   color: #DEB887;
   text-shadow: 0px 1px black;
   text-align: center;
