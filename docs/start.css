@@ -102,6 +102,7 @@ body {
   animation-name: button-fadein;
   animation-duration: 1s;
   animation-delay: calc(var(--anim-delay)*100ms);
+  animation-fill-mode: both;
 }
 
 .start-nav div:hover{
