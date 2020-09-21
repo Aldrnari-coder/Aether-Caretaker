@@ -4,6 +4,7 @@
     background-color: none;
     top: calc(100vh - 2em);
     transform: scale(1);
+    text-shadow: none;
   }
   20%{
     transform: scale(1.5);
@@ -29,12 +30,16 @@
 
 @keyframes button-fadein {
   0%{
+    transform: scale(0%);
     color: #F5DEB3;
     background-color: transparent;
     border-color: transparent;
     box-shadow: none;
     text-shadow: none;
     top: 0.5em;
+  }
+  0.1%{
+    transform: scale(100%);
   }
   20%{
     color: #DEB887;
