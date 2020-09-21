@@ -7,11 +7,11 @@
   <link rel="stylesheet" type = "text/css" href="style.css">
 </head>
 <body>
-  <div id="start" class="base-container">
-  	<h1 class="title-container unselectable"> 
-    	<div style="--anim-delay:0;">A</div> 
-    	<div style="--anim-delay:1;">e</div> 
-      <div style="--anim-delay:2;">t</div> 
+  <div id="start" class="base-container" style="z-index:3">
+	  <h1 class="title-container unselectable"> 
+		  <div style="--anim-delay:0;">A</div> 
+			<div style="--anim-delay:1;">e</div>
+			<div style="--anim-delay:2;">t</div> 
       <div style="--anim-delay:3;">h</div> 
       <div style="--anim-delay:4;">e</div> 
       <div style="--anim-delay:5;">r</div> 
@@ -33,11 +33,11 @@
     </div>
   </div>
 	
-  <div id="records" class="base-container">
+  <div id="records" class="base-container" style="z-index:2">
 		not implemented yet
 	</div>
 	
-	<div id="game" class="base-container">
+	<div id="game" class="base-container" style="z-index:1">
 		<div id="info"></div>
 		<div id="display">
 			<div id="scene">
@@ -49,7 +49,7 @@
 		<div id="controls"></div>
 	</div>
 	
-	<div id="settings" class="base-container">
+	<div id="settings" class="base-container" style="z-index:0">
 		not implemented yet
 	</div>
 	
