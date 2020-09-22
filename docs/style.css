@@ -59,6 +59,9 @@
     top: 0%;
   }
 }
+* {
+  outline: 1px dotted #000000;
+}
 
 body {
   display: flex;
