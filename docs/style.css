@@ -19,7 +19,7 @@
     color: #8B4513;
   }
   95%{
-    color: #DEB887;
+    /*color: #DEB887;*/
     text-shadow: none;
   }
   100%{
@@ -83,6 +83,7 @@ body {
   justify-content: center;
   flex: 100%;
   height: 100vh;
+  width: 100vw;
   padding: 0%;
   margin:0%;
   overflow: hidden;
