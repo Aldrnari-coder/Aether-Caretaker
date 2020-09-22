@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> Aether Caretaker </title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type = "text/css" href="style.css">
-</head>
-<body>
-  <div id="start" class="base-container" style="z-index:3">
-	  <h1 class="title-container unselectable"> 
-		  <div style="--anim-delay:0;">A</div> 
-			<div style="--anim-delay:1;">e</div>
-			<div style="--anim-delay:2;">t</div> 
-      <div style="--anim-delay:3;">h</div> 
-      <div style="--anim-delay:4;">e</div> 
-      <div style="--anim-delay:5;">r</div> 
-      <div style="--anim-delay:6;">&nbsp</div> 
-      <div style="--anim-delay:7;">C</div> 
-      <div style="--anim-delay:8;">a</div> 
-      <div style="--anim-delay:9;">r</div> 
-      <div style="--anim-delay:10;">e</div> 
-      <div style="--anim-delay:11;">t</div> 
-      <div style="--anim-delay:12;">a</div> 
-      <div style="--anim-delay:13;">k</div> 
-      <div style="--anim-delay:14;">e</div> 
-      <div style="--anim-delay:15;">r</div>
-    </h1>
-    <div class="start-nav unselectable">
-      <div id="new-game" style="--anim-delay:18;">New Story</div>
-      <div id="records" style="--anim-delay:19;">Records</div>
-      <div id="settings" style="--anim-delay:20;">Settings</div>
+  <head>
+    <title> Aether Caretaker </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <div id="start" class="base-container" style="z-index:3">
+      <h1 class="title-container unselectable"> 
+        <div style="--anim-delay:0;">A</div> 
+        <div style="--anim-delay:1;">e</div>
+        <div style="--anim-delay:2;">t</div> 
+        <div style="--anim-delay:3;">h</div> 
+        <div style="--anim-delay:4;">e</div>
+        <div style="--anim-delay:5;">r</div>
+        <div style="--anim-delay:6;">&nbsp</div>
+        <div style="--anim-delay:7;">C</div> 
+        <div style="--anim-delay:8;">a</div> 
+        <div style="--anim-delay:9;">r</div> 
+        <div style="--anim-delay:10;">e</div> 
+        <div style="--anim-delay:11;">t</div> 
+        <div style="--anim-delay:12;">a</div> 
+        <div style="--anim-delay:13;">k</div> 
+        <div style="--anim-delay:14;">e</div> 
+        <div style="--anim-delay:15;">r</div>
+      </h1>
+      <div class="start-nav unselectable">
+        <div id="new-game" onclick="startNewGame()"style="--anim-delay:18;">New Story</div>
+        <div id="records" style="--anim-delay:19;">Records</div>
+        <div id="settings" style="--anim-delay:20;">Settings</div>
+      </div>
     </div>
-  </div>
-	
-  <div id="records" class="base-container" style="z-index:2">
-		not implemented yet
-	</div>
-	
-	<div id="game" class="base-container" style="z-index:1">
-		<div id="info"></div>
-		<div id="display">
-			<div id="scene">
-				<div id="story"></div>
-				<div id="stats"></div>
-			</div>
-			<div id="inventory"></div>
-		</div>
-		<div id="controls"></div>
-	</div>
-	
-	<div id="settings" class="base-container" style="z-index:0">
-		not implemented yet
-	</div>
-	
-</body>
+  	
+    <div id="records" class="base-container" style="z-index:2">
+  		not implemented yet
+  	</div>
+  	
+  	<div id="game" class="base-container" style="z-index:1">
+  		<div id="info"></div>
+  		<div id="display">
+  			<div id="scene">
+  				<div id="story"></div>
+  				<div id="stats"></div>
+  			</div>
+  			<div id="inventory"></div>
+  		</div>
+  		<div id="controls"></div>
+  	</div>
+  	
+  	<div id="settings" class="base-container" style="z-index:0">
+  		not implemented yet
+  	</div>
+  	
+  </body>
 </html>
