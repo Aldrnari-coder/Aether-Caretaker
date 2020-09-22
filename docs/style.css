@@ -30,32 +30,28 @@
 
 @keyframes button-fadein {
   0%{
-    transform: scale(0%);
     color: #F5DEB3;
     background-color: transparent;
-    border-color: none;
+    border-color: transparent;
     box-shadow: none;
     text-shadow: none;
     top: 0.5em;
   }
-  0.1%{
-    transform: scale(100%);
-  }
-  20%{
+  5%{
     color: #DEB887;
     text-shadow: transparent;
   }
-  40%{
+  10%{
     text-shadow: 0px 1px black;
     background-color: transparent;
   }
-  60%{
+  20%{
     background-color: #FAEBD7;
     border-color: transparent;
   }
-  80%{
+  50%{
     border-color: #8B4513;
-    box-shadow: transparent;
+    box-shadow: none;
     top: 0.5em;
   }
   100%{
