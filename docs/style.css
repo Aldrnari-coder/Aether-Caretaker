@@ -105,6 +105,7 @@ body {
   flex-direction: row;
   justify-content: center;
   font-size: 10vw;
+  top: 5vh;
 }
 
 .title-container div {
