@@ -133,7 +133,7 @@ body {
   align-content: center;
 }
 
-@media screen and (orientation: landscape), (max-aspect-ratio: 14:9){
+@media screen and (orientation: landscape), (max-aspect-ratio: 16:9){
   .start-nav {
     flex-direction: row;
   }
