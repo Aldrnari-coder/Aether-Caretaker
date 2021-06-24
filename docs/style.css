@@ -2,7 +2,7 @@
   0% {
     color: #F5DEB3;
     background-color: none;
-    top: calc(100vh - 2em);
+    top: calc(100vh - 2rem);
     transform: scale(1);
     text-shadow: none;
   }
@@ -127,6 +127,7 @@ body {
   font-size: 8vmin;
   display: flex;
   flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -151,7 +152,7 @@ body {
   background-color: #FAEBD7;
   box-shadow: 0px 0.5vh #8B4513;
   width: 50vmin;
-  max-width: 30em;
+  min-width: 30em;
   margin: 1vh;
   animation-name: button-fadein;
   animation-duration: 1s;
