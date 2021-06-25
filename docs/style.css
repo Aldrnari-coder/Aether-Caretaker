@@ -124,19 +124,12 @@ body {
 
 
 .start-nav {
-  font-size: 8vmin;
+  font-size: 2.3rem;
   display: flex;
   flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
   align-content: center;
-}
-
-@media screen and (orientation: landscape), (max-aspect-ratio: 16:9){
-  .start-nav {
-    flex-direction: row;
-  }
 }
 
 .start-nav div{
@@ -144,20 +137,32 @@ body {
   color: #DEB887;
   text-shadow: 0px 1px black;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   cursor:pointer;
   display: flex;
   border-style: solid;
   border-radius: 0.2em;
+  border-width: 1px;
   border-color: #8B4513;
   background-color: #FAEBD7;
   box-shadow: 0px 0.5vh #8B4513;
-  width: 50vmin;
-  min-width: 1em;
-  margin: 1vh;
+  width: 10em;
+  margin: 2vh 0.5vw;
   animation-name: button-fadein;
   animation-duration: 1s;
   animation-delay: calc(var(--anim-delay)*200ms);
   animation-fill-mode: backwards;
+}
+
+@media screen and (orientation: landscape), ((max-height: 480px) and (max-width: 480px)) {
+  .start-nav {
+    flex-direction: row;
+  }
+  .start-nav div{
+    width: 4.4em;
+    /*min-width: 8rem;*/
+  }
 }
 
 .start-nav div:hover{
